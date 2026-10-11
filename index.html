@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 2 — Лабораторная работа</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="site-header" class="site-header">
+    <div class="header-inner">
+      <img id="logo" class="logo" src="image.png" alt="Логотип сайта">
+
+      <div class="header-content">
+        <nav id="main-nav" class="main-nav">
+          <ul class="menu">
+            <li><a href="#links">Ссылка меню 1</a></li>
+            <li><a href="#table-section">Ссылка 2</a></li>
+            <li><a href="#form-section">Ссылка 3</a></li>
+          </ul>
+        </nav>
+
+        <h1 id="site-title" class="site-title">Название сайта</h1>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="content">
+
+    <section id="links" class="content-section">
+      <h2>Список гиперссылок</h2>
+      <ul class="links-list">
+        <li><a href="https://validator.w3.org/" target="_blank" rel="noopener">Потом сделаю</a></li>
+        <li><a href="https://gitlab.com/" target="_blank" rel="noopener">Потом сделаю</a></li>
+        <li><a href="https://developer.mozilla.org/ru/" target="_blank" rel="noopener">Потом сделаю</a></li>
+      </ul>
+    </section>
+
+    <section id="table-section" class="content-section">
+      <h2>Таблица</h2>
+
+      <table id="data-table" class="data-table">
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Название</th>
+            <th>Количество</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Товар A</td>
+            <td>10</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Товар B</td>
+            <td>20</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td colspan="2">Товар C — объединённые ячейки</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Товар D</td>
+            <td rowspan="2">50</td>
+            <td>400</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Товар E</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Товар F</td>
+            <td>60</td>
+            <td>600</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form-section" class="content-section">
+      <h2>Форма</h2>
+
+      <form id="contact-form" class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Сообщение:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-inner">
+      <p id="copyright" class="copyright">&copy; Александр Моругин</p>
+    </div>
+  </footer>
+
+</body>
+</html>
